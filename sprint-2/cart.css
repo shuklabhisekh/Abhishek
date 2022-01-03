@@ -1,0 +1,29 @@
+*{
+    background-color: rgb(185,200,169);
+    color:rgb(82,91,80) ;
+   }
+   #value{
+       /* border: 1px solid red; */
+       height: 50px;
+       font-size: 30px;
+   }
+   #show{
+        margin-top: 50px;
+        /* border: 1px solid green; */
+        display: grid;
+        grid-template-columns: repeat(4,22%);
+        justify-content: space-between;
+   }
+   #show>div{
+        border: 1px solid rgb(82,91,80);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 20px;
+    }
+    img{
+        height: 250px;
+        width: 100%;
+    }
+    #pricebox{
+        display: grid;
+        justify-content: space-between;
+    }
