@@ -29,7 +29,6 @@ a{
 }
 #getDishes{
     margin-top: 50px;
-    border: 1px solid green;
     display: grid;
     grid-template-columns: repeat(4,22%);
     justify-content: space-between;
