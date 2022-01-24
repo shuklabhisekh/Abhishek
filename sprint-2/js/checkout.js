@@ -1,5 +1,5 @@
-function submit(e){
-    e.preventDefault()
+function submit(event){
+    event.preventDefault()
     console.log("here")
     alert("Your order is accepted")
 

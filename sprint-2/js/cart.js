@@ -2,19 +2,29 @@ arr=JSON.parse(localStorage.getItem("order"))
 console.log(arr)
 displayOrder(arr)
 
+
 function displayOrder(arr){
+   if(arr.length==0){
+      window.location.href="menu.html"
+   }
     var show= document.getElementById("show")
     show.textContent=""
+    var  sum = 0
 arr.map(function(elem,index){
-   var value=document.getElementById("value")
-//    var sum= sum+price
-//    value.textContent=sum
+   var value1 =document.getElementById("value")
+   
 
    var box0=document.createElement("div")
    var img=document.createElement("img")
    img.src= elem.strMealThumb
    var price=document.createElement("h5")
-   price.textContent="Rs : "+Math.floor(Math.random()*(500-100)+100)
+   let a = Math.floor(Math.random()*(500-100)+100)
+   price.textContent="Rs : "+ a
+   
+   sum= sum +a
+   
+   value1.textContent="Total Price : "+ sum
+
    var button=document.createElement("button")
    button.textContent="Remove from cart"
    button.addEventListener("click",function(){
@@ -23,7 +33,7 @@ arr.map(function(elem,index){
    box0.append(img,price,button)
    show.append(box0)
 })
-//    displayOrder(arr)
+
 }
 
 

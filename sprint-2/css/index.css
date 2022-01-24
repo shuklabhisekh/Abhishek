@@ -1,17 +1,57 @@
 *{
     background-color: rgb(185,200,169);
+    color: rgb(82,91,80);
+}
+#home1{
+    display: flex;
+    border: 3px solid rgb(82,91,80);
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+#logo{
+    height: 100%;
 }
 #home{
-    border: 1px solid red;
+    width: 30%;
     height: 50px;
     display: grid;
-    grid-template-columns: repeat(3,8%);
-    justify-content: end;
+    grid-template-columns: repeat(4,8%);
+    justify-content: space-between;
     align-items: center;
     text-decoration: none;
-
+    padding-right: 10px;
 }
 a{
     text-decoration: none;
     color:rgb(82,91,80) ;
+}
+#getDishes{
+    margin-top: 50px;
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+    justify-content: space-between;
+    
+}
+#getDishes>div{
+    border: 1px solid rgb(82,91,80);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    margin-top: 50px;
+}
+img{
+    height: 250px;
+    width: 100%;
+}
+#total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    height: 50px;
+    
 }

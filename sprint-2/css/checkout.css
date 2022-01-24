@@ -5,3 +5,23 @@
    input{
        margin-bottom: 20px;
    }
+   #addressbox{
+       border: 2px solid rgb(82,91,80) ; 
+       margin: auto;
+       width: 35%;
+       text-align: center;
+       height: 430px;
+       margin-top: 60px;
+       line-height: 40px;
+   }
+   #navbar{
+       border: 3px solid rgb(82,91,80);
+       padding: 10px 20px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   #logo{
+       height: 50px;
+
+   }
