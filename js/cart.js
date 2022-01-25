@@ -1,5 +1,4 @@
 arr=JSON.parse(localStorage.getItem("order"))
-console.log(arr)
 displayOrder(arr)
 
 

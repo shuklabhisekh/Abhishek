@@ -2,14 +2,12 @@ getDishes()
 
 
 let arr=JSON.parse(localStorage.getItem("order"))||[]
-// document.getElementById("#total").textContent=arr.length
 
 async function getDishes(){
     try{
         let url="https://www.themealdb.com/api/json/v1/1/search.php?s"
     let response = await fetch(url)
     let data= await response.json()
-    console.log(data.meals)
     showDishes(data.meals)
     }
    catch(error){
@@ -42,9 +40,7 @@ function showDishes(data){
    }
 
 function storeOrder(elem){
-    // document.getElementById("itemsInCart").textContent=arr.length
 arr.push(elem)
 localStorage.setItem("order",JSON.stringify(arr))
 getDishes()
-console.log(elem)
 }

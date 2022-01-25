@@ -5,13 +5,28 @@
    input{
        margin-bottom: 20px;
    }
+   #smallbox0{
+       display: flex;
+       flex-direction: row;
+       flex: 3;
+       height: 430px;
+       margin-top: 60px;
+   }
+   #kavya, #dhruv{
+       height: 90%;
+       padding: 20px;
+   }
+   #kavya>img, #dhruv>img{
+    height: 100%;
+   }
+
    #addressbox{
        border: 2px solid rgb(82,91,80) ; 
        margin: auto;
        width: 35%;
        text-align: center;
        height: 430px;
-       margin-top: 60px;
+       /* margin-top: 60px; */
        line-height: 40px;
    }
    #navbar{
